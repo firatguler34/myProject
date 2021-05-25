@@ -59,6 +59,7 @@ public class StepInceHesap extends BasePage {
 
     }
 
+
     @Step("Sepete urun ekle")
     public void addToCard() {
         actionAndClickElementWithJs(ConstantsInceHesap.addCartProduct);
@@ -66,11 +67,37 @@ public class StepInceHesap extends BasePage {
     @Step("Sepette urun oldugunu kontrol et")
     public void controlMyCard() {
         click(ConstantsInceHesap.myCardIcon);
-        WebElement element = findElement(ConstantsInceHesap.myCardItem);
-        Assert.assertNotNull("Sepette urun elementi bulunamadi",element);
+        List<WebElement> elements = findElements(ConstantsInceHesap.myCardItem);
+        Assert.assertNotNull("Sepette urun elementi bulunamadi",elements);
         log.info("urunun sepette oldugu kontrol edildi");
     }
-
+    @Step("Sepette urun <count> oldugunu kontrol")
+    public void controlMyCard(int count) {
+        click(ConstantsInceHesap.myCardIcon);
+        List<WebElement> elements = findElements(ConstantsInceHesap.myCardItem);
+        Assert.assertEquals("sepette urun sayisi 2 ",count,elements.size());
+        log.info("urunlerin sepette oldugu kontrol edildi");
+    }
+    @Step("Navbar ustune git")
+    public void actionToElementNav() {
+        actionElement(ConstantsInceHesap.navTabButton);
+    }
+    @Step("Geri git")
+    public void backToSearchPage() {
+        click(ConstantsInceHesap.pcPageBack);
+    }
+    @Step("Pencere kapat")
+    public void close() {
+        click(ConstantsInceHesap.closeSelect);
+    }
+    @Step("Pencere chose kapat")
+    public void closeChose() {
+        click(ConstantsInceHesap.closeChose);
+    }
+    @Step("Search buton tikla")
+    public void searchhh() {
+        click(ConstantsInceHesap.searchInput);
+    }
 
     @Step("<seconds> bekle")
     public void waitBySeconds(int seconds) {

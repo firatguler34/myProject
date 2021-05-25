@@ -15,7 +15,11 @@ public class ConstantsInceHesap {
     public static final By productList = By.cssSelector("div[class='product-item']");
     public static final By addCartProduct = By.cssSelector("a[class='btn btn-to-cart']");
     public static final By myCardIcon = By.cssSelector("div[class='cart'] a[class='arr']");
-    public static final By myCardItem = By.cssSelector("div[class='cart-top'] ul");
+    public static final By myCardItem = By.cssSelector("div[class='cart-top'] ul li");
+    public static final By navTabButton = By.cssSelector("nav[class='all']");
+    public static final By pcPageBack = By.cssSelector("a[href='/pc-bilgisayar-fiyatlari/']");
+    public static final By closeSelect = By.id("onesignal-slidedown-cancel-button");
+    public static final By closeChose = By.cssSelector("button[class='btn btn-primary btn-cerez']");
 
 
 

@@ -9,9 +9,14 @@ This is a concept file with following syntax for each concept.
  *cikis yapp
 #Arama butonuna <txt> bilgisi girilir
  *Arama butonuna :<txt> ekle
+#Bekle ve acilan pencereleri kapat
+ *"4" bekle
+ *Pencere kapat
+ *Pencere chose kapat
 #Arama butonuna basilir
  *Arama butonuna bas
 #Arama sayfasinin acildiği kontrol edilir
+ *"2" bekle
  *Arama sayfasi kontrol et "Pc (Bilgisayar)"
 #Arama sayfasindan rastgele bir urun secilir
  *Arama sayfasindan rastgele bir urun sec
@@ -20,3 +25,12 @@ This is a concept file with following syntax for each concept.
  *"2" bekle
 #Sepetime basilir ve urun kontrol edilir
  *Sepette urun oldugunu kontrol et
+ *"2" bekle
+#Navbar ustune git acildigini kontrol et
+ *"2" bekle
+ *Navbar ustune git
+#Arama sekmesine butonuna tiklanir
+ *Search buton tikla
+#Sepette urun sayisi :<count> oldugu kontrol edilir
+ *Sepette urun <count> oldugunu kontrol
+

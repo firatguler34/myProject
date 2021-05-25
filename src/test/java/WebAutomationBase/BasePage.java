@@ -70,12 +70,30 @@ public class BasePage extends BaseTest {
             Assert.fail("Hata, element ustune gidilemedi");
         }
     }
-    protected void actionAndClickElement(By by){
+    protected void actionElement(WebElement element){
+        try {
+            Actions actions = new Actions(driver);
+            actions.moveToElement(element).build().perform();
+        }catch (Exception e){
+            Assert.fail("Hata, element ustune gidilemedi");
+        }
+    }
+    protected void actionElement(By by){
         try {
             WebElement element = findElement(by);
             Actions actions = new Actions(driver);
             actions.moveToElement(element).build().perform();
             click(element);
+        }catch (Exception e){
+            Assert.fail("Hata, element ustune gidilemedi");
+        }
+    }
+
+    protected void actionAndClickElement(By by){
+        try {
+            WebElement element = findElement(by);
+            Actions actions = new Actions(driver);
+            actions.moveToElement(element).build().perform();
         }catch (Exception e){
             Assert.fail("Hata, element ustune gidilemedi");
         }
