@@ -24,15 +24,7 @@ public class BasePage extends BaseTest {
     }
 
     protected List<WebElement> findElements(By by) {
-        List<WebElement> elements = null;
-        try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-            elements = driver.findElements(by);
-
-        } catch (Exception e) {
-            Assert.fail("Hata, element list bulunamadı" + e);
-        }
-        return elements;
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
     }
 
     protected void click(By by) {

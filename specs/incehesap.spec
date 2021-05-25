@@ -33,5 +33,6 @@ Urun Arama
 *Arama sayfasindan rastgele bir urun secilir
 *Sepete urun ekle butonuna basilir
 *Sepette urun sayisi :"2" oldugu kontrol edilir
+*Anasayfa gelinir sepetim tiklanir ve bir urun silinir
 *Cikis yap
 

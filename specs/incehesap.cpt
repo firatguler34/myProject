@@ -33,4 +33,12 @@ This is a concept file with following syntax for each concept.
  *Search buton tikla
 #Sepette urun sayisi :<count> oldugu kontrol edilir
  *Sepette urun <count> oldugunu kontrol
+#Anasayfa gelinir sepetim tiklanir ve bir urun silinir
+ *Anasayfaya git
+ *"2" bekle
+ *Sepetimi basss
+ *"2" bekle
+ *Header sepetten urun sil
+ *"2" bekle
+ *Header sepetten urun sil onayla
 

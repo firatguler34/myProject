@@ -1,19 +1,17 @@
 package WebAutomationTest;
 
 import WebAutomationBase.BasePage;
-import WebAutomationBase.BaseTest;
 import com.thoughtworks.gauge.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class StepInceHesap extends BasePage {
+
     private final Logger log = LogManager.getLogger(StepInceHesap.class);
 
 
@@ -56,54 +54,72 @@ public class StepInceHesap extends BasePage {
     public void randomSelectProduct() {
         List<WebElement> elements = findElements(ConstantsInceHesap.productList);
         actionAndClickElement(elements.get(randomNumber(elements.size())));
-
     }
-
 
     @Step("Sepete urun ekle")
     public void addToCard() {
         actionAndClickElementWithJs(ConstantsInceHesap.addCartProduct);
     }
+
     @Step("Sepette urun oldugunu kontrol et")
     public void controlMyCard() {
         click(ConstantsInceHesap.myCardIcon);
         List<WebElement> elements = findElements(ConstantsInceHesap.myCardItem);
-        Assert.assertNotNull("Sepette urun elementi bulunamadi",elements);
+        Assert.assertNotNull("Sepette urun elementi bulunamadi", elements);
         log.info("urunun sepette oldugu kontrol edildi");
     }
+
     @Step("Sepette urun <count> oldugunu kontrol")
     public void controlMyCard(int count) {
         click(ConstantsInceHesap.myCardIcon);
         List<WebElement> elements = findElements(ConstantsInceHesap.myCardItem);
-        Assert.assertEquals("sepette urun sayisi 2 ",count,elements.size());
+        Assert.assertEquals("sepette urun sayisi 2 ", count, elements.size());
         log.info("urunlerin sepette oldugu kontrol edildi");
     }
+
     @Step("Navbar ustune git")
     public void actionToElementNav() {
         actionElement(ConstantsInceHesap.navTabButton);
-    }
-    @Step("Geri git")
-    public void backToSearchPage() {
-        click(ConstantsInceHesap.pcPageBack);
     }
     @Step("Pencere kapat")
     public void close() {
         click(ConstantsInceHesap.closeSelect);
     }
+
     @Step("Pencere chose kapat")
     public void closeChose() {
         click(ConstantsInceHesap.closeChose);
     }
+
     @Step("Search buton tikla")
     public void searchhh() {
         click(ConstantsInceHesap.searchInput);
     }
+    @Step("Header sepetten urun sil")
+    public void headerDeleteProduct() {
+
+        List<WebElement> elements = findElements(ConstantsInceHesap.removeMyCard);
+        clickJs(elements.get(1));
+    }
+    @Step("Header sepetten urun sil onayla")
+    public void headerDeleteProductAc() {
+        click(ConstantsInceHesap.removeAcceptItem);
+    }
+    @Step("Anasayfaya git")
+    public void backMainPage() {
+        click(ConstantsInceHesap.mainPageLogo);
+    }
+    @Step("Sepetimi basss")
+    public void clickMyCardd() {
+        click(ConstantsInceHesap.myCardIcon);
+    }
+
 
     @Step("<seconds> bekle")
     public void waitBySeconds(int seconds) {
         try {
             log.info(seconds + " saniye bekleniyor.");
-            Thread.sleep(seconds * 1000);
+            Thread.sleep(seconds*1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

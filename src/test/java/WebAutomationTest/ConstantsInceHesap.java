@@ -3,6 +3,7 @@ package WebAutomationTest;
 import org.openqa.selenium.By;
 
 public class ConstantsInceHesap {
+    public static final By mainPageLogo = By.cssSelector("div[class='logo'] a");
     public static final By loginButton = By.cssSelector("div[class='login'] a");
     public static final By inputUserName = By.id("top-user-username");
     public static final By inputPassword = By.id("top-user-password");
@@ -20,7 +21,7 @@ public class ConstantsInceHesap {
     public static final By pcPageBack = By.cssSelector("a[href='/pc-bilgisayar-fiyatlari/']");
     public static final By closeSelect = By.id("onesignal-slidedown-cancel-button");
     public static final By closeChose = By.cssSelector("button[class='btn btn-primary btn-cerez']");
-
-
+    public static final By removeMyCard = By.cssSelector("a[class='delete-this remove-product']");
+    public static final By removeAcceptItem = By.cssSelector("button[class='btn btn-dialog ih-yes']");
 
 }
