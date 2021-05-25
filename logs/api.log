@@ -1,0 +1,9 @@
+25-05-2021 12:20:04.941 [Gauge] [INFO] Watching directory: C:\Users\testinium\IdeaProjects\myProject\specs
+25-05-2021 12:20:04.942 [Gauge] [DEBUG] Found 1 files
+25-05-2021 12:20:04.942 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+25-05-2021 12:20:04.951 [Gauge] [INFO] Initializing specs cache with 1 specs
+25-05-2021 12:20:04.951 [Gauge] [DEBUG] Adding specs from C:\Users\testinium\IdeaProjects\myProject\specs\example.spec
+25-05-2021 12:20:04.952 [Gauge] [INFO] Initializing steps cache with 1 steps
+25-05-2021 12:20:04.952 [Gauge] [INFO] Gauge daemon initialized and listening on port: 52764
+25-05-2021 12:20:05.687 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"dene" > 
+25-05-2021 12:20:05.688 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"dene" parameterizedStepValue:"dene" > > 
