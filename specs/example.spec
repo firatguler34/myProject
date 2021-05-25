@@ -8,6 +8,19 @@ To execute this specification, run
 	gauge specs
 
 
-Denemeee
+Login Olma
 ------
-*dene
+*Uye girisi butonuna basilir
+*Kullanici adi : "firt.glrr@gmail.com" ve sifre :"fİRAT123" olarak girilir hesap ismi "fırat güler" kontrol edilir
+*Cikis yap
+
+
+Urun Arama
+--------
+*Arama butonuna "Bilgisayar" bilgisi girilir
+*Arama butonuna basilir
+*Arama sayfasinin acildiği kontrol edilir
+*Arama sayfasindan rastgele bir urun secilir
+*Sepete urun ekle butonuna basilir
+*Sepetime basilir ve urun kontrol edilir
+

@@ -1,0 +1,22 @@
+Created by testinium on 25.05.2021
+
+This is a concept file with following syntax for each concept.
+#Uye girisi butonuna basilir
+ *butona bas
+#Kullanici adi : <username> ve sifre :<pass> olarak girilir hesap ismi <accountname> kontrol edilir
+ *Username : <username> Password : <pass> gir ve kontrol et : <accountname>
+#Cikis yap
+ *cikis yapp
+#Arama butonuna <txt> bilgisi girilir
+ *Arama butonuna :<txt> ekle
+#Arama butonuna basilir
+ *Arama butonuna bas
+#Arama sayfasinin acildiği kontrol edilir
+ *Arama sayfasi kontrol et "Pc (Bilgisayar)"
+#Arama sayfasindan rastgele bir urun secilir
+ *Arama sayfasindan rastgele bir urun sec
+#Sepete urun ekle butonuna basilir
+ *Sepete urun ekle
+ *"2" bekle
+#Sepetime basilir ve urun kontrol edilir
+ *Sepette urun oldugunu kontrol et
